@@ -1,0 +1,21 @@
+void setup() {
+  // initialize digital pin 13 as an output.
+  pinMode(13, OUTPUT);
+}
+
+void loop() {
+  int i;
+  for (i=1; i<6; i++){
+    digitalWrite(13, HIGH);   // turn the LED on
+    delay(500);                       // wait for 0.5 seconds
+    digitalWrite(13, LOW);    // turn the LED off by making the voltage LOW
+    delay(500);                       // wait for 0.5 seconds
+  }    
+  int x;
+  for (x=1; x<6; x++){
+    digitalWrite(13, HIGH);   // turn the LED on
+    delay(2000);                       // wait for 2 seconds
+    digitalWrite(13, LOW);    // turn the LED off by making the voltage LOW
+    delay(2000);                       // wait for 2 seconds
+  }    
+}
